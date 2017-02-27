@@ -17,7 +17,6 @@ public class Product {
     private String category;
     private String description;
     private String image;
-    private String productcol;
 
     public Product() {
     }
@@ -76,15 +75,5 @@ public class Product {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public String getProductcol() {
-        return productcol;
-    }
-
-    public void setProductcol(String productcol) {
-        this.productcol = productcol;
-    }
-    
-    
+    }  
 }
