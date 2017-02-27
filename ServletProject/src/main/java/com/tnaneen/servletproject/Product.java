@@ -19,8 +19,27 @@ public class Product {
     private String image;
 
     public Product() {
+          this.id = 9;
+        this.name = "P";
+        this.price = 100;
+        this.available = 10;
+        this.category = "cars";
+        this.description = "blablabla";
+        this.image = "path";
     }
 
+    public Product(int id, String name, int price, int available, String category, String description, String image) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.available = available;
+        this.category = category;
+        this.description = description;
+        this.image = image;
+    }
+
+    
+    
     public int getId() {
         return id;
     }
@@ -76,4 +95,13 @@ public class Product {
     public void setImage(String image) {
         this.image = image;
     }  
+
+    @Override
+    public String toString() {
+        return id+" >> "+name+" >> "+category+" >> "+price+" >> "+available+" >> "+description+" >> "+image;
+    }
+    
+    
+    
+    
 }
