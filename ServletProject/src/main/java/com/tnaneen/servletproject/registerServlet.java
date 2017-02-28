@@ -34,15 +34,22 @@ public class registerServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet registerServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet registerServlet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            
+            String email = request.getParameter("email");
+            String password = request.getParameter("password");
+            String username = request.getParameter("username");
+            String address = request.getParameter("address");
+            String birthday = request.getParameter("birthday");
+            
+            DataBaseHandler dbh = new DataBaseHandler();
+            User user = new User();
+            
+            user.setEmail(email);
+            user.setPassword(password);
+            user.setUserName(username);
+            user.setAddress(address);
+            user.setBirthday(birthday);
+            dbh.registerUser(user);
         }
     }
 

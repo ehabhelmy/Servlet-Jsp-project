@@ -6,11 +6,63 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Registration</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <!-- registration-form -->
+        <div class="registration-form">
+	<div class="container">
+	<div class="dreamcrub">
+                <ul class="breadcrumbs">
+                    <li class="home">
+                       <a href="index.html" title="Go to Home Page">Home</a>&nbsp;
+                       <span>&gt;</span>
+                    </li>
+                    <li class="women">
+                       Registration
+                    </li>
+                </ul>
+                <ul class="previous">
+                	<li><a href="index.html">Back to Previous Page</a></li>
+                </ul>
+                <div class="clearfix"></div>
+			   </div>
+		<h2>Registration</h2>
+		<div class="registration-grids">
+			<div class="reg-form">
+				<div class="reg">
+					 <p>Welcome, please enter the following details to continue.</p>
+					 <p>If you have previously registered with us, <a href="#">click here</a></p>
+                                         <form action="registerServlet">
+						 <ul>
+							 <li class="text-info">Username: </li>
+							 <li><input type="text" name="username"></li>
+						 </ul>
+						 <ul>
+							 <li class="text-info">Email: </li>
+							 <li><input type="email" name="email"></li>
+						 </ul>				 
+						<ul>
+							 <li class="text-info">Password: </li>
+							 <li><input type="password" name="password"></li>
+						 </ul>
+						 <ul>
+							 <li class="text-info">Address:</li>
+							 <li><input type="password" name="address"></li>
+						 </ul>
+						 <ul>
+							 <li class="text-info">Birthday</li>
+							 <li><input type="text" name="birthday"></li>
+						 </ul>	
+						 <input type="submit" value="REGISTER NOW"> 
+					 </form>
+				 </div>
+			</div>
+		</div>
+	</div>
+        </div>
+        <!-- registration-form -->
     </body>
 </html>

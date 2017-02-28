@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Login</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div>                    
+            <h3>REGISTERED CUSTOMERS</h3>
+                <p>If you have an account with us, please log in.</p>
+                <form action="loginServlet">
+                  <div>
+                        <span>Email Address<label>*</label></span>
+                        <input type="email" name="email"> 
+                  </div>
+                  <div>
+                        <span>Password<label>*</label></span>
+                        <input type="password" name="password"> 
+                  </div>
+                  <a class="forgot" href="#">Forgot Your Password?</a>
+                  <input type="submit" value="Login">
+            </form>
+        </div>
     </body>
 </html>
