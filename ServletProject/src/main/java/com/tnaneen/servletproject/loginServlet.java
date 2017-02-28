@@ -36,11 +36,18 @@ public class loginServlet extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             String email = request.getParameter("email");
             String password = request.getParameter("password");
+            String[] rememberMe =  request.getParameterValues("rememberMe");
             
             DataBaseHandler dbh = new DataBaseHandler();
             boolean exists = dbh.loginUser(email, password);
             
             if(exists){
+                //check remember me status
+                if(rememberMe != null){
+                    //System.out.println("isRemembered: " + rememberMe[0]);
+                    //handle cookie
+                }
+                
                 //redirect to home
             }
             else{
